@@ -1,0 +1,87 @@
+\documentclass[a4, 12pt]{article}
+\usepackage{booktabs, multirow}
+\usepackage{soul}
+\usepackage{xcolor,colortbl}
+\usepackage{changepage,threeparttable}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Cornell University}
+\rhead{\today}
+\cfoot{\thepage}
+\lfoot{Bryan Peters}
+\rfoot{Sandia SAND: N/A}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+   \includegraphics[scale=1.6]{Images/bold_cornell_seal_pms187_red.eps} 
+\end{center}
+   
+\thispagestyle{fancy}
+
+\center
+
+\textsc{\large M.Eng PROPOSAL}
+
+\vspace{0.5in}
+
+\noindent\makebox[\linewidth]{\rule{\linewidth}{1.2pt}}
+\textsc{ \textbf{\large Test/Flight readiness development of ChipSats}}
+\noindent\makebox[\linewidth]{\rule{\linewidth}{1.2pt}}
+
+\vspace{0.5in}
+
+\begin{minipage}{0.48\textwidth}
+    \begin{flushleft}
+        \textit{Student:} \\
+        Bryan Peters \\
+        Cornell University \\
+        bmp85@cornell.edu
+    \end{flushleft}
+\end{minipage}
+\begin{minipage}{0.48\textwidth}
+    \begin{flushright}
+    \textit{Advisor:} \\
+    Dr.Joseph Skovira \\
+    \textit{Out of Department Advisor:}\\
+    Joshua Umansky-Castro\\
+    \end{flushright}
+\end{minipage}
+
+\vspace{2in}
+
+\textbf{\large Department of Electrical and Computer Engineering} \\
+
+\thispagestyle{empty}
+\end{titlepage}
+
+\newpage
+
+
+\tableofcontents
+\newpage
+
+%%%------------------------------------------------------------------------------------------
+%%          Sections of the paper. All located in seperate files to improve readbility.
+%%%------------------------------------------------------------------------------------------
+\input{Sections/Background}
+\input{Sections/Requirements and Work.tex}
+\input{Sections/Deliverables.tex}
+% \input{Sections/Methods}
+\input{Sections/Timeline}
+\input{Sections/Conclusion}
+%%%------------------------------------------------------------------------------------------
+
+\bibliography{sources}
+\bibliographystyle{IEEEtran}
+\end{document}
